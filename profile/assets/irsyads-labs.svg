@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="204" viewBox="0 0 840 204" role="img" aria-labelledby="title desc">
+  <title id="title">Irsyads Labs</title>
+  <desc id="desc">Software for families, mosques, and schools</desc>
+  <defs>
+    <linearGradient id="surface" x2="1" y2="1"><stop stop-color="#091625"/><stop offset="1" stop-color="#133240"/></linearGradient>
+    <linearGradient id="accent"><stop stop-color="#8af6bf"/><stop offset="1" stop-color="#8ddcfb"/></linearGradient>
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse"><path d="M20 0H0V20" fill="none" stroke="#5a999e" stroke-opacity=".21"/></pattern>
+    <clipPath id="frame"><rect width="840" height="204" rx="13"/></clipPath>
+  </defs>
+  <style>
+    .signal { opacity: 0; }
+    @media (prefers-reduced-motion: no-preference) {
+      .signal { opacity: .9; stroke-dasharray: 32 320; animation: flow 4.8s linear infinite; }
+    }
+    @keyframes flow { from { stroke-dashoffset: 32; } to { stroke-dashoffset: -320; } }
+  </style>
+  <g clip-path="url(#frame)">
+    <rect width="840" height="204" fill="url(#surface)"/>
+    <rect width="840" height="204" fill="url(#grid)"/>
+    <path d="M0 2H840" stroke="url(#accent)" stroke-width="3"/>
+    <path d="M526 102h58l47-49h45l50 49h114m-256 0 47 49h45l50-49" fill="none" stroke="#55938e" stroke-width="2"/>
+    <path class="signal" d="M526 102h58l47-49h45l50 49h114" fill="none" stroke="#a0ffd2" stroke-linecap="round" stroke-width="3"/>
+    <g fill="#143a42" stroke="#a0ffd2" stroke-width="2"><circle cx="584" cy="102" r="5"/><circle cx="675" cy="53" r="6"/><circle cx="675" cy="151" r="6"/><circle cx="726" cy="102" r="5"/></g>
+    <g font-family="Segoe UI, Arial, sans-serif">
+      <text x="35" y="111" fill="#eff9fa" font-size="67" font-weight="700">Irsyads Labs</text>
+      <text x="39" y="153" fill="#bddbdc" font-size="23">Software for families, mosques, and schools</text>
+    </g>
+  </g>
+  <rect x=".5" y=".5" width="839" height="203" rx="13" fill="none" stroke="#416170"/>
+</svg>
